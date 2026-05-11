@@ -1,0 +1,140 @@
+[
+  {
+    "sample_id": 1,
+    "url": "http://www.360pc2.com",
+    "title": "360 - 360安全卫士官网",
+    "icp_subject": "无备案",
+    "domain_registrar": "GKG.NET, INC.",
+    "ip_location": "境外",
+    "brand_owner": "北京奇虎科技有限公司",
+    "content_summary": "页面包含360 Logo、下载按钮，域名与官方高度近似",
+    "candidate_categories": [
+      {"category": "仿冒网站", "score": 0.85},
+      {"category": "商标滥用", "score": 0.45},
+      {"category": "钓鱼欺诈", "score": 0.30}
+    ],
+    "ground_truth": {
+      "final_classification": "仿冒网站",
+      "confidence": "高",
+      "risk_level": "高危"
+    }
+  },
+  {
+    "sample_id": 2,
+    "url": "http://test.toeble.com",
+    "title": "360官网 - 360安全中心",
+    "icp_subject": "河南辉宝服饰有限公司",
+    "domain_registrar": "Alibaba Cloud",
+    "ip_location": "中国",
+    "brand_owner": "北京奇虎科技有限公司",
+    "content_summary": "页面包含360 Logo，使用360官网作为标题关键字",
+    "candidate_categories": [
+      {"category": "疑似商务合作", "score": 0.72},
+      {"category": "商标滥用", "score": 0.50},
+      {"category": "其他", "score": 0.35}
+    ],
+    "ground_truth": {
+      "final_classification": "疑似商务合作",
+      "confidence": "中",
+      "risk_level": "低危"
+    }
+  },
+  {
+    "sample_id": 3,
+    "url": "https://360aqllqwindows.cyou/",
+    "title": "360浏览器 速度快、超丝滑、功能丰富",
+    "icp_subject": "无备案",
+    "domain_registrar": "Gname.com Pte. Ltd.",
+    "ip_location": "境外",
+    "brand_owner": "北京奇虎科技有限公司",
+    "content_summary": "域名由中文拼音组成，页面为360浏览器下载，下载程序鉴定为恶意",
+    "candidate_categories": [
+      {"category": "钓鱼欺诈", "score": 0.88},
+      {"category": "仿冒网站", "score": 0.65},
+      {"category": "其他", "score": 0.20}
+    ],
+    "ground_truth": {
+      "final_classification": "钓鱼欺诈",
+      "confidence": "高",
+      "risk_level": "高危"
+    }
+  },
+  {
+    "sample_id": 4,
+    "url": "https://58.250.68.29:18085/index.jsp",
+    "title": "光大证券国际-BPM系统",
+    "icp_subject": "无ICP备案",
+    "domain_registrar": "无域名（IP直接访问）",
+    "ip_location": "中国广东省深圳市",
+    "brand_owner": "光大证券国际（香港）有限公司",
+    "content_summary": "通过公网IP直接访问的内部系统页面",
+    "candidate_categories": [
+      {"category": "疑似暴露资产", "score": 0.78},
+      {"category": "其他", "score": 0.40}
+    ],
+    "ground_truth": {
+      "final_classification": "疑似暴露资产",
+      "confidence": "高",
+      "risk_level": "中危"
+    }
+  },
+  {
+    "sample_id": 5,
+    "url": "https://www.zgtaishi.com/",
+    "title": "台石集团 官方网站",
+    "icp_subject": "台石新材料集团（东莞）有限公司",
+    "domain_registrar": "阿里云",
+    "ip_location": "中国",
+    "brand_owner": "中国海洋石油集团有限公司",
+    "content_summary": "页面含有中海油LOGO，标注为合作伙伴",
+    "candidate_categories": [
+      {"category": "商标滥用", "score": 0.82},
+      {"category": "品牌侵权", "score": 0.45},
+      {"category": "其他", "score": 0.30}
+    ],
+    "ground_truth": {
+      "final_classification": "商标滥用",
+      "confidence": "高",
+      "risk_level": "低危"
+    }
+  },
+  {
+    "sample_id": 6,
+    "url": "http://www.wxyqjy.com/productshow/562",
+    "title": "紫金保险定制酒-双套牌无锡老酒",
+    "icp_subject": "无备案",
+    "domain_registrar": "境外",
+    "ip_location": "境外",
+    "brand_owner": "紫金财产保险股份有限公司",
+    "content_summary": "页面售卖紫金保险定制酒，域名无备案",
+    "candidate_categories": [
+      {"category": "品牌侵权", "score": 0.80},
+      {"category": "商标滥用", "score": 0.55},
+      {"category": "其他", "score": 0.25}
+    ],
+    "ground_truth": {
+      "final_classification": "品牌侵权",
+      "confidence": "高",
+      "risk_level": "中危"
+    }
+  },
+  {
+    "sample_id": 7,
+    "url": "https://zbeo.yunzhan365.com/books/onqt/mobile/index.html",
+    "title": "财意险实战通关手册",
+    "icp_subject": "广州万彩信息技术有限公司",
+    "domain_registrar": "阿里云",
+    "ip_location": "中国",
+    "brand_owner": "紫金财产保险股份有限公司",
+    "content_summary": "展示紫金保险内部资料，封面标注注意保管",
+    "candidate_categories": [
+      {"category": "其他", "score": 0.65},
+      {"category": "品牌侵权", "score": 0.35}
+    ],
+    "ground_truth": {
+      "final_classification": "其他",
+      "confidence": "中",
+      "risk_level": "低危"
+    }
+  }
+]

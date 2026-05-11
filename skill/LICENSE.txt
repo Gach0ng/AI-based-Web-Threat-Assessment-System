@@ -1,0 +1,46 @@
+MIT License
+
+Copyright (c) 2024 Threat Classification Skill
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Skill用途说明
+
+Web威胁分类研判专家Skill（Threat_classification）
+
+本Skill用于Claude对硬编码规则输出的候选集+分数做最终威胁分类研判。
+
+**核心功能**：
+- 基于专家知识对候选类别做最终判决
+- 输出结构化研判结果（最终分类、置信度、风险等级、研判依据）
+- 覆盖网站/社交媒体/APP全分类
+
+**不包含功能**：
+- 特征提取代码
+- 打分计算逻辑
+- 类别剪枝规则
+- 任何硬编码规则
+
+**保存路径**：`/root/.claude/skills/Threat_classification`
+
+**适用场景**：数字风险检测全分类研判
+
+**配合模式**：规则做计算、Skill做研判

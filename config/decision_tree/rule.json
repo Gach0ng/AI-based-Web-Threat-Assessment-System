@@ -1,0 +1,306 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "description": "Web威胁分类决策树规则",
+    "last_modified": "2026-05-09"
+  },
+  "conditions": {
+    "threat_related": {"type": "bool", "module": "conditions", "name": "check_threat_related"},
+    "icp_empty": {"type": "bool", "module": "conditions", "name": "is_icp_empty"},
+    "brand_in_title": {"type": "bool", "module": "conditions", "name": "is_brand_in_title"},
+    "icp_subject_type": {"type": "str", "module": "conditions", "name": "get_icp_subject_type"},
+    "yolo_ocr_empty": {"type": "bool", "module": "conditions", "name": "yolo_ocr_empty"},
+    "entertainment_gambling_porn": {"type": "bool", "module": "conditions", "name": "is_entertainment_gambling_porn"},
+    "login_form_related_title": {"type": "bool", "module": "conditions", "name": "is_login_form_related_title"},
+    "official_whitelist": {"type": "bool", "module": "conditions", "name": "check_official_whitelist"},
+    "login_form_after_dynamic": {"type": "bool", "module": "conditions", "name": "has_login_form_after_dynamic_render"},
+    "js_diff_ratio": {"type": "float", "module": "conditions", "name": "get_js_diff_ratio"},
+    "entertainment_from_browser": {"type": "bool", "module": "conditions", "name": "is_entertainment_gambling_porn_from_browser"},
+    "brand_sales_info": {"type": "bool", "module": "conditions", "name": "has_brand_sales_info"},
+    "wd_brand_icon_cooperation": {"type": "bool", "module": "conditions", "name": "is_wd_brand_icon_cooperation"},
+    "new_domain_overseas": {"type": "bool", "module": "conditions", "name": "is_new_domain_overseas"},
+    "domain_new_or_overseas": {"type": "bool", "module": "conditions", "name": "is_domain_new_or_overseas"}
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "type": "condition",
+      "condition_key": "threat_related",
+      "true_goto": "icp_empty_check",
+      "false_goto": "not_sc_related"
+    },
+    {
+      "id": "icp_empty_check",
+      "type": "condition",
+      "condition_key": "icp_empty",
+      "true_goto": "icp_empty_path",
+      "false_goto": "domain_with_icp"
+    },
+    {
+      "id": "domain_with_icp",
+      "type": "condition",
+      "condition_key": "brand_in_title",
+      "true_goto": "icp_type_check",
+      "false_goto": "result_other_low_risk_1"
+    },
+    {
+      "id": "icp_type_check",
+      "type": "in_list",
+      "condition_key": "icp_subject_type",
+      "values": ["政府机构", "事业单位"],
+      "true_goto": "result_gov_coop",
+      "false_goto": "yolo_ocr_check"
+    },
+    {
+      "id": "yolo_ocr_check",
+      "type": "condition",
+      "condition_key": "yolo_ocr_empty",
+      "true_goto": "result_biz_coop",
+      "false_goto": "result_trademark_abuse_icp"
+    },
+    {
+      "id": "icp_empty_path",
+      "type": "condition",
+      "condition_key": "entertainment_gambling_porn",
+      "true_goto": "result_counterfeit_high_entertainment",
+      "false_goto": "login_form_title_check"
+    },
+    {
+      "id": "login_form_title_check",
+      "type": "condition",
+      "condition_key": "login_form_related_title",
+      "true_goto": "result_phishing_high_title",
+      "false_goto": "official_whitelist_check"
+    },
+    {
+      "id": "official_whitelist_check",
+      "type": "condition",
+      "condition_key": "official_whitelist",
+      "true_goto": "result_exposed_asset",
+      "false_goto": "login_form_dynamic_check"
+    },
+    {
+      "id": "login_form_dynamic_check",
+      "type": "condition",
+      "condition_key": "login_form_after_dynamic",
+      "true_goto": "js_diff_entertainment_check",
+      "false_goto": "brand_sales_check"
+    },
+    {
+      "id": "js_diff_entertainment_check",
+      "type": "or_threshold",
+      "condition_key": "js_diff_ratio",
+      "threshold": 0.5,
+      "or_condition_key": "entertainment_from_browser",
+      "true_goto": "result_counterfeit_high_diff",
+      "false_goto": "result_phishing_high_login"
+    },
+    {
+      "id": "brand_sales_check",
+      "type": "condition",
+      "condition_key": "brand_sales_info",
+      "true_goto": "result_brand_infringement",
+      "false_goto": "wd_coop_check"
+    },
+    {
+      "id": "wd_coop_check",
+      "type": "condition",
+      "condition_key": "wd_brand_icon_cooperation",
+      "true_goto": "result_trademark_abuse_wd",
+      "false_goto": "js_diff_entertainment_check_2"
+    },
+    {
+      "id": "js_diff_entertainment_check_2",
+      "type": "or_threshold",
+      "condition_key": "js_diff_ratio",
+      "threshold": 0.5,
+      "or_condition_key": "entertainment_from_browser",
+      "true_goto": "result_counterfeit_high_diff2",
+      "false_goto": "new_domain_overseas_check"
+    },
+    {
+      "id": "new_domain_overseas_check",
+      "type": "condition",
+      "condition_key": "new_domain_overseas",
+      "true_goto": "result_counterfeit_high_domain",
+      "false_goto": "result_other_low_risk_2"
+    },
+    {
+      "id": "not_sc_related",
+      "type": "condition",
+      "condition_key": "domain_new_or_overseas",
+      "true_goto": "not_sc_brand_title_check",
+      "false_goto": "result_harmless"
+    },
+    {
+      "id": "not_sc_brand_title_check",
+      "type": "condition",
+      "condition_key": "brand_in_title",
+      "true_goto": "not_sc_icp_empty_check",
+      "false_goto": "result_other_low_risk_3"
+    },
+    {
+      "id": "not_sc_icp_empty_check",
+      "type": "condition",
+      "condition_key": "icp_empty",
+      "true_goto": "result_other_low_risk_4",
+      "false_goto": "not_sc_icp_type_check"
+    },
+    {
+      "id": "not_sc_icp_type_check",
+      "type": "in_list",
+      "condition_key": "icp_subject_type",
+      "values": ["政府机构", "事业单位"],
+      "true_goto": "result_gov_coop_2",
+      "false_goto": "not_sc_yolo_ocr_check"
+    },
+    {
+      "id": "not_sc_yolo_ocr_check",
+      "type": "condition",
+      "condition_key": "yolo_ocr_empty",
+      "true_goto": "result_biz_coop_2",
+      "false_goto": "result_trademark_abuse_icp_2"
+    },
+    {
+      "id": "result_other_low_risk_1",
+      "type": "result",
+      "category": "其他",
+      "risk_level": "低危",
+      "reasons": ["标题不包含品牌泛化信息"]
+    },
+    {
+      "id": "result_other_low_risk_2",
+      "type": "result",
+      "category": "其他",
+      "risk_level": "低危",
+      "reasons": ["不满足高危分类条件"]
+    },
+    {
+      "id": "result_other_low_risk_3",
+      "type": "result",
+      "category": "其他",
+      "risk_level": "低危",
+      "reasons": ["标题不包含品牌泛化信息"]
+    },
+    {
+      "id": "result_other_low_risk_4",
+      "type": "result",
+      "category": "其他",
+      "risk_level": "低危",
+      "reasons": ["ICP备案主体为空"]
+    },
+    {
+      "id": "result_harmless",
+      "type": "result",
+      "category": "无害网站",
+      "risk_level": "低危",
+      "reasons": ["注册时间满1年且IP在境内"]
+    },
+    {
+      "id": "result_gov_coop",
+      "type": "result",
+      "category": "疑似政务合作",
+      "risk_level": "低危",
+      "reason_template": ["ICP备案主体为{icp_type}"]
+    },
+    {
+      "id": "result_gov_coop_2",
+      "type": "result",
+      "category": "疑似政务合作",
+      "risk_level": "低危",
+      "reason_template": ["ICP备案主体为{icp_type}"]
+    },
+    {
+      "id": "result_biz_coop",
+      "type": "result",
+      "category": "疑似商务合作",
+      "risk_level": "低危",
+      "reasons": ["ICP备案主体为企业", "YOLO/OCR为空"]
+    },
+    {
+      "id": "result_biz_coop_2",
+      "type": "result",
+      "category": "疑似商务合作",
+      "risk_level": "低危",
+      "reasons": ["ICP备案主体为企业", "YOLO/OCR为空"]
+    },
+    {
+      "id": "result_trademark_abuse_icp",
+      "type": "result",
+      "category": "商标滥用",
+      "risk_level": "低危",
+      "reasons": ["ICP备案主体为企业", "YOLO/OCR非空"]
+    },
+    {
+      "id": "result_trademark_abuse_icp_2",
+      "type": "result",
+      "category": "商标滥用",
+      "risk_level": "低危",
+      "reasons": ["ICP备案主体为企业", "YOLO/OCR非空"]
+    },
+    {
+      "id": "result_trademark_abuse_wd",
+      "type": "result",
+      "category": "商标滥用",
+      "risk_level": "低危",
+      "reasons": ["数据来源为黑数据", "网页图标非空", "渲染后页面含官方合作字眼"]
+    },
+    {
+      "id": "result_brand_infringement",
+      "type": "result",
+      "category": "品牌侵权",
+      "risk_level": "中危",
+      "reasons": ["YOLO/OCR非空且包含品牌销售信息"]
+    },
+    {
+      "id": "result_exposed_asset",
+      "type": "result",
+      "category": "疑似暴露资产",
+      "risk_level": "中危",
+      "reasons": ["威胁情报反查包含官方域名白名单"]
+    },
+    {
+      "id": "result_counterfeit_high_entertainment",
+      "type": "result",
+      "category": "仿冒网站",
+      "risk_level": "高危",
+      "reasons": ["网站标题与娱乐/博彩/色情相关"]
+    },
+    {
+      "id": "result_counterfeit_high_diff",
+      "type": "result",
+      "category": "仿冒网站",
+      "risk_level": "高危",
+      "reason_template": ["动态渲染包含登录表单", "js_diff_or_entertainment"]
+    },
+    {
+      "id": "result_counterfeit_high_diff2",
+      "type": "result",
+      "category": "仿冒网站",
+      "risk_level": "高危",
+      "reason_template": ["js_diff_or_entertainment"]
+    },
+    {
+      "id": "result_counterfeit_high_domain",
+      "type": "result",
+      "category": "仿冒网站",
+      "risk_level": "高危",
+      "reasons": ["注册时间<365天且IP境外"]
+    },
+    {
+      "id": "result_phishing_high_title",
+      "type": "result",
+      "category": "钓鱼欺诈",
+      "risk_level": "高危",
+      "reasons": ["网站标题与登录/表单填写相关"]
+    },
+    {
+      "id": "result_phishing_high_login",
+      "type": "result",
+      "category": "钓鱼欺诈",
+      "risk_level": "高危",
+      "reason_template": ["动态渲染包含登录表单", "js_diff_ratio_under_50"]
+    }
+  ],
+  "root": "root"
+}

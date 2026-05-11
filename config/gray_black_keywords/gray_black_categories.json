@@ -1,0 +1,99 @@
+{
+  "categories": [
+    {
+      "name": "色情/裸聊",
+      "risk_level": "high",
+      "keywords": ["色情", "裸聊", "黄色", "成人网站", "成人视频", "AV女优", "成人电影", "做爱", "性爱", "一夜情", "同城约炮", "援交", "换妻", "人妻", "私密直播", "大秀", "私密视频", "激情视频", "丝袜", "诱惑", "午夜影院", "激情影院", "美女直播", "女主播", "裸身", "全裸", "人体艺术", "情色", "情欲", "寂寞难耐", "同城交友", "约附近的人", "裸聊", "视讯", "视频裸聊", "免费成人", "成人片", "无码", "人妻交换", "乱伦", "SM", "调教", "捆绑", "制服诱惑", "学生妹", "护士装", "女教师", "空姐", "诱惑短片", "成人动漫", "色情动漫", "色情直播", "真人裸聊", "同城小姐", "找小姐", "按摩推油", "丝袜美腿", "美乳", "巨乳", "翘臀", "私密处", "露点", "含嘬", "口交", "肛交", "颜射", "潮吹", "自蔚", "自慰", "找外围", "外围女", "商务伴游", "伴游", "高端陪侍", "91", "草榴", "桃花族", "亚裔色情", "中文色情", "华人色情", "porn", "sex", "nude", "naked", "xxx", "adult", "erotic", "pornhub", "escort", "sugar daddy", "sugar baby", "sugarbaby", "sugardaddy", "webcam model", "live sex", "sex chat", "naked chat", "cam girl", "amateur sex", "teen porn", "milf", "housewife", "babe", "nsfw", "xxx video", "free porn", "porn video", "porn tube", "redtube", "xnxx", "xvideos", "youporn", "xhamster"]
+    },
+    {
+      "name": "赌博/博彩",
+      "risk_level": "high",
+      "keywords": ["赌博", "博彩", "赌场", "赌球", "赌注", "澳门博彩", "威尼斯人", "葡京", "永利", "皇冠体育", "365bet", "bet365", "体育博彩", "时时彩", "双色球", "赛马", "赛车", "pk10", "快三", "百家乐", "21点", "德州扑克", "炸金花", "牛牛", "斗牛", "梭哈", "二八杠", "龙虎斗", "骰宝", "幸运28", "PC蛋蛋", "北京赛车", "幸运飞艇", "11选5", "快乐彩", "基诺彩", "澳门赌场", "线上赌场", "网络博彩", "博彩公司", "博彩网站", "投注站", "体彩", "福彩", "足彩", "竞彩", "篮彩", "外围彩", "地下彩", "私彩", "黑彩", "私庄", "盘口", "庄家", "开盘", "坐庄", "代理开户", "开户即送", "首充优惠", "充值送", "存款送", "彩金", "流水", "打码", "ag旗舰厅", "bbin", "太阳城", "金沙", "新葡京", "银河娱乐", "威尼斯人", "新濠天地", "永利皇宫", "美高梅", "普京娱乐", "葡京娱乐", "辉煌国际", "皇家娱乐", "星际娱乐", "帝豪娱乐", "casino", "betting", "gambling", "poker", "slots", "lottery", "sportsbook", "bookmaker", "odds", "wager", "bet365", "william hill", "pokerstars", "partypoker", "888casino", "betway", "betfair", "bingo", "scratch card", "keno", "roulette", "blackjack", "slot machine", "fruit machine", "online casino", "live casino"]
+    },
+    {
+      "name": "非法集资/投资诈骗",
+      "risk_level": "high",
+      "keywords": ["原始股", "股权众筹", "资金盘", "拆分盘", "虚拟货币投资", "区块链投资", "量化交易", "跟单交易", "外汇托管", "保本理财", "高收益理财", "稳赚不赔", "天天分红", "投资理财", "日化收益", "年化收益", "钱生钱", "传销", "微商代理", "拉人头", "层级返利", "MBI", "MFC", "WV", "维卡币", "亚元", "马汇", "瑞波", "派币", "Pi币", "链吧", "星链", "救世主", "非你莫属", "善心汇", "云联惠", "钱宝网", "蛙宝", "唐小僧", "联壁", "斐讯", "零购官网", "楚楚推", "每日一淘", "花生日记", "环球捕手", "贝店", "云集", "微达", "鲁易购", "中销", "赚享客", "未来星球", "星链世界", "中文物购", "东望集团", "股权激励", "上市融资", "原始股权", "私募基金", "海外房产投资", "柬埔寨房产", "马来西亚房产", "泰国房产", "移民投资", "黄金投资", "艺术品投资", "电影投资", "一元购", "云购", "夺宝", "抽奖", "拆红包", "ponzi", "pyramid scheme", "money game", "high yield investment", "forex scam", "crypto scam", "pump and dump", "hyramid", "get rich quick", "fast money", "double your money", "investment opportunity", "guaranteed returns", "risk free investment"]
+    },
+    {
+      "name": "虚假贷款/网贷",
+      "risk_level": "high",
+      "keywords": ["无抵押贷款", "信用贷款", "秒批贷款", "裸贷", "套路贷", "714高炮", "砍头息", "网贷平台", "小额贷款", "贷款代办", "包装流水", "代办大额信用卡", "只要身份证", "黑白户贷款", "无视黑户", "不查征信", "无视负债", "不看大数据", "信用不良可贷", "黑名单可贷", "强开微粒贷", "强开借呗", "强开京东金条", "强开花呗", "代办信用卡", "办理大额卡", "代还信用卡", "精养卡", "信用卡套现", "POS机套现", "扫码套现", "TX", "空卡分期", "现金分期", "消费分期", "教育分期", "医美分期", "租房分期", "手机分期", "电脑分期", "以租代购", "predatory loan", "payday loan", "loan shark", "cash loan", "instant loan", "no credit check", "bad credit loan", "personal loan", "quick cash", "fast cash"]
+    },
+    {
+      "name": "钓鱼欺诈/仿冒",
+      "risk_level": "high",
+      "keywords": ["账号异常", "登录异常", "您的账户已被锁定", "请重新验证", "系统升级", "请在24小时内完成", "账户安全警告", "尊敬的客户", "积分兑换", "免费领取", "立即领取", "您的快递已签收", "快递丢失赔付", "包裹异常", "航班取消补偿", "酒店预订失败", "门票退款", "中奖信息", "恭喜您中奖", "免费抽奖", "iphone免费送", "您的银行账户异常", "账户涉嫌洗钱", "请配合调查", "社保卡异常", "医保卡异常", "公积金异常", "ETC失效", "ETC过期", "高速卡过期", "绿通失效", "营业执照异常", "法人信息过期", "工商年报未报", "交警罚款未缴", "高速违章", "电子眼抓拍", "退款理赔", "商品质量问题赔偿", "三倍赔偿", "客服在线", "一对一服务", "专属客服", "仿冒APP", "盗版软件", "破解版", "注册码", "激活码", "phishing", "verify your account", "suspended", "urgent action", "account locked", "password expired", "verify identity", "confirm your identity", "security alert", "unusual activity", "verify payment", "update payment", "confirm your email", "fake shop", "counterfeit", "仿冒"]
+    },
+    {
+      "name": "黑客/黑产工具",
+      "risk_level": "high",
+      "keywords": ["黑客", "暴力破解", "拖库", "撞库", "社工库", "黑产", "羊毛党", "薅羊毛", "批量注册", "养号", "定位找人", "查户籍", "查开房记录", "查通话记录", "私人调查", "追债", "讨债", "人肉搜索", "查微信记录", "查QQ记录", "查聊天记录", "查开房", "查身份证", "查手机号", "查名下房产", "查财产", "查婚姻状况", "查工作单位", "查犯罪记录", "查失信", "定位监控", "手机监听", "微信监控", "GPS定位", "强开会员", "强开特权", "破解会员", "破解VIP", "批量点赞", "批量关注", "批量评论", "批量发帖", "刷量服务", "刷粉", "刷赞", "刷播放量", "刷单", "代注册", "代实名", "代认证", "代备案", "出售账号", "回收账号", "买号", "卖号", "盗号", "洗号", "保号", "养号教程", "接码平台", "打码平台", "验证码平台", "代接码", "hacking tool", "keylogger", "ransomware", "exploit kit", "dark web", "stolen data", "leaked data", "data breach", "cracking", "account takevoer", "credential stuffing", "spam tool", "botnet", "ddos tool"]
+    },
+    {
+      "name": "医疗药品/非法行医",
+      "risk_level": "medium",
+      "keywords": ["特效药", "祖传秘方", "假药", "迷药", "催情水", "处方药代购", "精神类药品", "麻醉药品", "自制药品", "未经批准进口药", "伟哥代购", "日本药", "泰国药", "印度药", "仿制药", "自制减肥药", "配方揭秘", "原料药", "医药中间体", "人工受孕", "代孕", "试管婴儿", "性别鉴定", "胎儿性别", "生男生女", "转胎丸", "堕胎药", "迷奸药", "催情药", "听话水", "失忆水", "乖乖水", "增强药", "壮阳药", "春药", "催情素", "干细胞治疗", "免疫细胞治疗", "脐带血", "胎盘素", "非法行医", "无证行医", "黑诊所", "美容工作室", "illegal drug", "counterfeit medicine", "prescription drug", "unapproved drug", "custom drug", "drug import", "fertility drug", "abortion pill", "misoprostol"]
+    },
+    {
+      "name": "野生动物/非法交易",
+      "risk_level": "medium",
+      "keywords": ["象牙", "犀牛角", "穿山甲", "虎骨", "熊胆", "鱼翅", "野生保护动物", "非法捕猎", "买卖野生动物", "玳瑁", "砗磲", "红珊瑚", "羚羊角", "海龟", "海马", "燕窝", "雪蛤", "虫草", "野生人参", "野山参", "虎鞭", "鹿茸", "鹿角", "牛黄", "马宝", "蟒蛇皮", "鳄鱼皮", "鸵鸟蛋", "猛禽", "猎隼", "买卖枪支", "仿真枪", "气枪", "猎枪", "子弹", "弓弩", "电击器", "催泪器", "钢珠枪", "exotic wildlife", "endangered species", "illegal wildlife trade", "ivory", "rhino horn", "pangolin", "tiger bone", "bear bile", "shark fin", "seahorse", "coral", "giant clam"]
+    },
+    {
+      "name": "虚假证件/学历",
+      "risk_level": "medium",
+      "keywords": ["办假证", "代办证件", "学历认证", "假学历", "伪造证件", "办户口", "代办签证", "假签证", "代办护照", "代办港澳通行证", "代办台湾通行证", "代办病假条", "代办在职证明", "代办银行流水", "代办收入证明", "代办存款证明", "代办房产证明", "代办营业执照", "代办资质证书", "代办工程师证", "代办会计证", "代办教师资格证", "代办医师资格证", "代办学历认证", "学历提升", "免试入学", "代考", "枪手", "替考", "代考", "答案买卖", "办身份证", "买身份证", "假身份证", "一代身份证", "户口迁移", "代办落户", "代缴社保", "代缴公积金", "fake id", "counterfeit diploma", "forged document", "fake passport", "fake degree", "diploma mill", "fake certificate", "forged license", "fake transcript"]
+    },
+    {
+      "name": "算命/封建迷信",
+      "risk_level": "low",
+      "keywords": ["算命", "看相", "风水", "起名", "算卦", "占卜", "姻缘测算", "八字算命", "面相分析", "手相", "玄学", "通灵", "巫术", "驱邪", "法术", "还阴债", "受生债", "补财库", "超度", "做法事", "请符", "护身符", "辟邪", "镇宅", "化煞", "改名", "取名", "宝宝起名", "公司起名", "奇门遁甲", "梅花易数", "六爻", "八字合婚", "择日", "选吉日", "开工动土", "搬家吉日", "数字能量", "手机号吉凶", "车牌号吉凶", "周公解梦", "梦境分析", "托梦", "魂魄", "狐仙", "出马仙", "看事", "查事", "堂口", "fortune telling", "astrology", "psychic", "medium", "divination"]
+    },
+    {
+      "name": "仿冒品/假货",
+      "risk_level": "medium",
+      "keywords": ["高仿", "精仿", "A货", "原单", "尾单", "外贸原单", "顶级复刻", "专柜品质", "工厂直销", "一手货源", "奢侈品高仿", "名牌包", "精仿手表", "高仿鞋", "A货手表", "莆田鞋", "东莞货", "广州货", "大牌A货", "假化妆品", "高仿香水", "假保健品", "假减肥药", "假机油", "假轮胎", "假刹车片", "假电瓶", "假种子", "假化肥", "假农药", "假兽药", "假证", "假章", "假发票", "假合同", "假公文", "counterfeit goods", "knockoff", "replica", "fake brand", "fake luxury", "counterfeit shoes", "counterfeit watch", "fake electronics", "clone phone", "refurbished"]
+    },
+    {
+      "name": "虚拟货币/区块链陷阱",
+      "risk_level": "high",
+      "keywords": ["炒币", "虚拟货币", "数字货币", "加密货币", "ICO", "IEO", "STO", "发币", "Token", "空气币", "传销币", "资金盘币", "挖矿", "矿机", "云挖矿", "矿场", "IPFS", "Filecoin", "炒短线", "跟单炒币", "带单", "喊单", "分析师", "量化交易机器人", "自动搬砖", "无风险套利", "钱包", "冷钱包", "热钱包", "授权签名", "DeFi", "流动性挖矿", "质押", "锁仓", "空投", "NFT", "数字藏品", "数字艺术品", "铸造NFT", "元宇宙", "链游", "GameFi", "play to earn", "跑路", "项目方跑路", "交易所跑路", "崩盘", "crypto trading", "altcoin", "shitcoin", "memecoin", "crypto mining", "cloud mining", "bitcoin mining", "crypto scam", "rug pull", "honeypot", "ICO scam"]
+    },
+    {
+      "name": "外汇/资金出境陷阱",
+      "risk_level": "high",
+      "keywords": ["外汇平台", "炒外汇", "外汇托管", "保本外汇", "MT4", "MT5", "外汇跟单", "EA外汇", "智能交易", "出金", "入金", "汇出", "境外汇款", "地下钱庄", "换汇", "外汇兑换", "美元换购", "港币兑换", "资金出境", "境外投资", "QDII", "海外房产投资", "跨境汇款", "蚂蚁搬家", "分拆汇款", "躲开监管", "数字资产跨境", "USDT跨境", "比特币跨境转移", "跑分平台", "跑分洗钱", "码商", "收款码", "forex trading", "forex broker", "metatrader", "currency trading", "offshore investment", "offshore account", "money transfer"]
+    },
+    {
+      "name": "情感诈骗/杀猪盘",
+      "risk_level": "high",
+      "keywords": ["杀猪盘", "猪八戒", "盘哥", "盘姐", "养猪", "情感挽回", "挽回前任", "分离小三", "拆散二人", "网络交友", "同城约会", "附近的人", "主播", "网络恋人", "甜蜜之旅", "真爱无价", "博彩内幕", "导师带你", "漏洞投注", "稳赚", "投资理财", "高回报", "日进斗金", "发财梦", "跨国恋人", "美国大兵", "维和士兵", "外国男友", "工程师", "建筑师", "医生", "律师", "成功人士", "富二代", "官二代", "红二代", "星二代", "romance scam", "sweetheart scam", "catfish", "military romance", "online date scam", "dating scam"]
+    },
+    {
+      "name": "刷单/刷信誉",
+      "risk_level": "high",
+      "keywords": ["刷单", "刷信誉", "刷销量", "刷排名", "刷权重", "好评返现", "免单", "试吃", "试用", "测评", "抖音刷粉", "快手刷赞", "小红书刷赞", "刷播放量", "拼多多刷单", "淘宝刷单", "京东刷单", "天猫刷单", "亚马逊刷单", "eBay刷单", "Shopify刷单", "提升排名", "搜索排名", "销量排名", "榜单", "职业刷手", "刷手兼职", "放单", "主持", "公会", "空包", "快递单号", "物流底单", "签收证明", "虚假交易", "虚假订单", "虚假用户", "虚假流量", "fake review", "review manipulation", "review bot", "click farm", "fake traffic", "fake order", "刷单", "shua dan"]
+    },
+    {
+      "name": "窃听/监控/侵犯隐私",
+      "risk_level": "high",
+      "keywords": ["窃听器", "针孔摄像头", "偷拍设备", "偷窥设备", "GPS定位器", "跟踪器", "监听器", "拾音器", "手机监控", "微信监控", "QQ监控", "聊天记录监控", "监控软件", "查岗软件", "spousespy", "stalkerware", "基站定位", "手机定位", "号码定位", "找人", "隐私录像", "偷拍视频", "偷情录像", "捉奸", "开房记录", "通话记录", "短信记录", "微信记录", "户籍信息", "财产信息", "车辆信息", "房产信息", "信息贩卖", "数据贩卖", "隐私买卖", "信息倒卖", "surveillance", "spyware", "stalkerware", "gps tracker", "hidden camera", "nanny cam", "wiretap", "eavesdrop"]
+    },
+    {
+      "name": "非法代理/翻墙",
+      "risk_level": "medium",
+      "keywords": ["翻墙", "科学上网", "VPN", "梯子", "机场", "SSR", "V2Ray", "WireGuard", "Trojan", "Shadowsocks", "节点", "流量", "套餐", "月付", "年付", "回国线路", "国内外分组", "游戏专线", "ChatGPT专线", "原生IP", "住宅IP", "数据中心IP", "海外APP", "Telegram", "WhatsApp", "Line", "Twitter", "Facebook", "YouTube", "Instagram", "VPN service", "proxy", "shadowsocks", "v2ray", "gfw bypass", "censorship bypass"]
+    },
+    {
+      "name": "非法内容/违禁品",
+      "risk_level": "high",
+      "keywords": ["高清毛片", "无码破解", "VIP视频破解", "付费视频破解", "蹭网卡", "无线破解", "WiFi密码破解", "密码监听", "黑帽SEO", "寄生虫", "蜘蛛池", "泛目录", "站群", "镜像", "采集站", "扒站", "网站克隆", "木马", "病毒", "蠕虫", "后门", "webshell", "rookit", "DDoS", "攻击", "压力测试", "打站", "炸房", "社工库查询", "隐私查询", "开房查询", "户籍查询", "malware", "trojan", "virus", "ransomware", "rootkit", "ddos", "bruteforce", "crack", "keygen", "warez"]
+    },
+    {
+      "name": "不良服务/灰色服务",
+      "risk_level": "medium",
+      "keywords": ["代写作业", "代写论文", "论文代写", "毕业论文", "枪手代考", "代考服务", "答案出售", "考试助攻", "代骂", "代道歉", "代道歉", "代挽回", "代追人", "代聊", "代陪聊", "语音陪聊", "视频陪聊", "代扫墓", "代烧纸", "代祭祖", "代上香", "代购", "海外代购", "人肉代购", "关税代缴", "代办", "代缴", "代扣", "代还", "代付", "发票代开", "完税证明", "代开普通发票", "代开增值税票", "阴阳合同", "虚假合同", "AB合同", "套路合同", "contract fraud", "fake invoice", "invoice manipulation", "代写", "essay writer", "exam cheat", "homework help"]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# eval-viewer 配置
+
+{
+  "skill_name": "Threat_classification",
+  "display_fields": [
+    "url",
+    "final_classification",
+    "confidence",
+    "risk_level",
+    "reasoning",
+    "alternative_classifications",
+    "reference_sources"
+  ],
+  "color_scheme": {
+    "高危": "#dc3545",
+    "中危": "#ffc107",
+    "低危": "#28a745",
+    "未知": "#6c757d"
+  },
+  "benchmark_fields": [
+    "pass_rate",
+    "avg_duration_ms",
+    "avg_tokens"
+  ]
+}
