@@ -105,23 +105,23 @@ python main.py [模式参数] [选项]
 
 ```bash
 # 测试准确率（对比威胁分类字段）
-python main.py -m tree -t test_data/紫金.json
+python main.py -m tree -t test_data/示例.json
 
 # 研判结论（不带 -t 走 judgment 模式）
-python main.py -m tree -t test_data/紫金.json -om judgment
+python main.py -m tree -t test_data/示例.json -om judgment
 ```
 
 #### 完整模式（决策树+黑数据+MCP+Skill）
 
 ```bash
 # 单个URL研判（judgment 模式）
-python main.py -m full -u https://example.com -bnd "光大证券"
+python main.py -m full -u https://example.com -bnd "示例品牌"
 
 # 批量处理
 python main.py -m full -b batch.json -o results.json
 
 # 测试准确率（对比威胁分类字段）
-python main.py -m full -t test_data/紫金.json
+python main.py -m full -t test_data/示例.json
 
 # 不指定输出文件时，结果默认保存到 output/full_<时间戳>.json
 ```
@@ -351,7 +351,7 @@ THREAT_LEVEL_THRESHOLD = 30
 ```json
 {
   "url": "https://example.com",
-  "brand_owner": "光大证券",
+  "brand_owner": "示例品牌",
   "detection_time": "2024-01-01T00:00:00",
 
   "decision_tree": {

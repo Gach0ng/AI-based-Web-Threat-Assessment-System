@@ -1,12 +1,12 @@
 {
     "minimax_api_key": "your-minimax-key",
-    "wd_api_url": "http://10.16.20.11:8004/api/urlcloud",
+    "wd_api_url": "http://your-blacklist-api.example.com/api/urlcloud",
     "wd_api_key": "your-wd-key",
-    "sc_mcp_server_url": "https://mcp.example.com/mcp/dimensional",
+    "sc_mcp_server_url": "https://your-mcp-server.example.com/mcp/dimensional",
     "sc_api_key": "your-sc-api-key",
     "sc_salt": "your-salt",
     "sc_user": "your-user",
-    "sc_api_test_url": "http://api.safe.example.com",
+    "sc_api_test_url": "http://your-threat-api.example.com",
     "sc_api_test_appid": "your-sc-appid",
     "sc_api_test_secret": "your-sc-secret",
     "sc_level_threshold": 30
