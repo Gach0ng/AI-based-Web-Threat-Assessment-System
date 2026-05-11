@@ -17,7 +17,7 @@ Web威胁分类系统 - 主入口
 
 示例：
     # 完整模式研判单个URL（研判结论）
-    python main.py -m full -u https://example.com -b "光大证券"
+    python main.py -m full -u https://example.com -b "示例品牌"
 
     # 仅决策树测试准确率
     python main.py -m tree -t test_data.json
@@ -368,13 +368,13 @@ def create_parser():
   python main.py -m tree -t test_data.json
 
   # 完整模式 - 单个URL研判
-  python main.py -m full -u https://example.com -b "光大证券"
+  python main.py -m full -u https://example.com -b "示例品牌"
 
   # 完整模式 - 批量处理
   python main.py -m full --batch batch.json -o results.json
 
   # 完整模式 - 指定API密钥
-  python main.py -m full -u https://example.com -b "光大证券" -k <API密钥>
+  python main.py -m full -u https://example.com -b "示例品牌" -k <API密钥>
 """
     )
 

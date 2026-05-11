@@ -16,9 +16,9 @@ BRAND_VARIATION_PATTERNS = {
         'Co.', 'Ltd.', 'Inc.', 'Corp.', 'LLC'
     ],
     'abbreviations': {
-        '光大证券': ['EGI', 'ebt', 'everbright', 'guangda'],
-        '紫金保险': ['ZKI', 'zijin', 'zj', 'zking'],
-        '中国海洋': ['CNOOC', 'zhonghai', 'haiyang', 'oceanic'],
+        '示例品牌A': ['BRANDA', 'branda', 'example_a'],
+        '示例品牌B': ['BRANDB', 'brandb', 'example_b'],
+        '示例品牌C': ['BRANDC', 'brandc', 'example_c'],
     },
     'homograph_chars': {
         'o': ['0', 'ο', 'О'],
