@@ -157,25 +157,25 @@ $ python main.py -m tree -om accuracy
 ```json
 {
     "minimax_api_key": "your-minimax-key",
-    "wd_api_url": "http://10.16.20.11:8004/api/urlcloud",
+    "wd_api_url": "http://your-blacklist-api.example.com/api/urlcloud",
     "wd_api_key": "your-wd-key",
-    "sc_mcp_server_url": "https://mcp.example.com/mcp/dimensional",
-    "sc_api_key": "your-sc-key",
-    "sc_salt": "your-salt",
-    "sc_user": "your-user",
-    "sc_api_test_url": "http://api.safe.example.com",
-    "sc_api_test_appid": "your-sc-appid",
-    "sc_api_test_secret": "your-sc-secret",
-    "sc_level_threshold": 30
+    "threat_mcp_server_url": "https://mcp.example.com/mcp/dimensional",
+    "threat_api_key": "your-sc-key",
+    "threat_salt": "your-salt",
+    "threat_user": "your-user",
+    "threat_api_test_url": "http://api.safe.example.com",
+    "threat_api_test_appid": "your-sc-appid",
+    "threat_api_test_secret": "your-sc-secret",
+    "threat_level_threshold": 30
 }
 ```
 
 | 配置项 | 说明 |
 |--------|------|
-| `sc_api_test_url` | 威胁情报API接口地址 |
-| `sc_api_test_appid` | 威胁情报API APPID |
-| `sc_api_test_secret` | 威胁情报API密钥 |
-| `sc_level_threshold` | 威胁等级阈值，>=此值走中高危研判路线 |
+| `threat_api_test_url` | 威胁情报API接口地址 |
+| `threat_api_test_appid` | 威胁情报API APPID |
+| `threat_api_test_secret` | 威胁情报API密钥 |
+| `threat_level_threshold` | 威胁等级阈值，>=此值走中高危研判路线 |
 
 ### 字典配置
 
@@ -253,10 +253,10 @@ THREAT_LEVEL_THRESHOLD = 30
 
 | 配置项 | 默认值 | 说明 |
 |--------|--------|------|
-| `sc_api_test_url` | http://api.safe.example.com | 威胁情报API接口地址 |
-| `sc_api_test_appid` | - | APPID（必填） |
-| `sc_api_test_secret` | - | 密钥（必填） |
-| `sc_level_threshold` | 30 | 威胁等级阈值 |
+| `threat_api_test_url` | http://api.safe.example.com | 威胁情报API接口地址 |
+| `threat_api_test_appid` | - | APPID（必填） |
+| `threat_api_test_secret` | - | 密钥（必填） |
+| `threat_level_threshold` | 30 | 威胁等级阈值 |
 
 ---
 
